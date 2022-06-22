@@ -3,3 +3,6 @@ This is a script file that contains the command that print the full pathname of 
 
 #filename: 1-listit
 This is a script that lists the content of my current directory
+
+#filename: 2-bring_me_home
+This is a script that changes the working directory to users home directory
