@@ -6,3 +6,6 @@ This is a script that lists the content of my current directory
 
 #filename: 2-bring_me_home
 This is a script that changes the working directory to users home directory
+
+#filename: 3-listfiles
+This is a script that displays current directory content in long format
