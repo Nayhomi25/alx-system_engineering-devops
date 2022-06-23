@@ -34,3 +34,6 @@ This script sets the mode of hello to the same as olleh
 
 #filename: 11-directories_permissions
 This script gives execute permissions for all sub directories
+
+#filename: 12-directory_permissions
+this script creates a directory with 751 permissions
