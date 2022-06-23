@@ -13,3 +13,6 @@ This script changes the owner of the file hello
 
 #filename: 4-empty
 This script creates an empty file
+
+#filename: 5-execute
+This script adds execute permission for the owner of the file
