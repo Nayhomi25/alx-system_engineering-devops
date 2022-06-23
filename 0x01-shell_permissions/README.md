@@ -7,3 +7,6 @@ This script prints the effective user name of the current user
 
 #filename: 2-groups
 This script prints all the groups the current user is part of
+
+#filename: 3-new_owner
+This script changes the owner of the file hello
