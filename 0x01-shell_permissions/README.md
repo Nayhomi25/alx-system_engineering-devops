@@ -28,3 +28,6 @@ This script removes permissions from the owner and group owner and gives all per
 
 #filename: 9-Jogn_Doe
 This script sets the mode of the file hello
+
+#filename: 10-mirror_permissions
+This script sets the mode of hello to the same as olleh
