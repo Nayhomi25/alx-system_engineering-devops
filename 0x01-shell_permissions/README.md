@@ -19,3 +19,6 @@ This script adds execute permission for the owner of the file
 
 #filename: 6-multiple_permissions
 This script adds execute permissions to the owner and group owner and read permissions to other users
+
+#filename: 7-everybody
+This file gives execute permissions to user, group owner and the other users
