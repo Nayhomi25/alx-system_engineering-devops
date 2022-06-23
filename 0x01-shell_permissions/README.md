@@ -22,3 +22,6 @@ This script adds execute permissions to the owner and group owner and read permi
 
 #filename: 7-everybody
 This file gives execute permissions to user, group owner and the other users
+
+#filename; 8-James_Bond
+This script removes permissions from the owner and group owner and gives all permissions to the other users
