@@ -12,3 +12,6 @@ This is a script that displays current directory content in long format
 
 #filename: 4-listmorefiles
 This is a script that list hidden files in the current directory in long format
+
+#filename: 5-listfilesdigitonly
+This is a script that list hidden files numerically in long format
