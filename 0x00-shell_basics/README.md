@@ -15,3 +15,6 @@ This is a script that list hidden files in the current directory in long format
 
 #filename: 5-listfilesdigitonly
 This is a script that list hidden files numerically in long format
+
+#filename: 6-firstdirectory
+This is a script that creats a directory in the /tmp/ directory
