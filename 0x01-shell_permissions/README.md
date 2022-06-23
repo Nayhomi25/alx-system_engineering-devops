@@ -18,4 +18,4 @@ This script creates an empty file
 This script adds execute permission for the owner of the file
 
 #filename: 6-multiple_permissions
-This script adds execute permissions to the owner and group owner and read permissions to all other users
+This script adds execute permissions to the owner and group owner and read permissions to other users
