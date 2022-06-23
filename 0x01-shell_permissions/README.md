@@ -31,3 +31,6 @@ This script sets the mode of the file hello
 
 #filename: 10-mirror_permissions
 This script sets the mode of hello to the same as olleh
+
+#filename: 11-directories_permissions
+This script gives execute permissions for all sub directories
