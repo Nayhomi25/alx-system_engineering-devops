@@ -25,3 +25,6 @@ This file gives execute permissions to user, group owner and the other users
 
 #filename; 8-James_Bond
 This script removes permissions from the owner and group owner and gives all permissions to the other users
+
+#filename: 9-Jogn_Doe
+This script sets the mode of the file hello
