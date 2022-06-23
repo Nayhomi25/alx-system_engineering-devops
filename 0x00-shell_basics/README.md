@@ -18,3 +18,6 @@ This is a script that list hidden files numerically in long format
 
 #filename: 6-firstdirectory
 This is a script that creats a directory in the /tmp/ directory
+
+#filename; 7-movethatfile
+This is a script that moves a file
