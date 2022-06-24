@@ -46,3 +46,6 @@ This script changes the owner and group of all the files in the current working 
 
 #filename: 101-symbolic_link_permissions
 This script changes the owner and group of a symbolic file link
+
+#fileaname:102-if_only
+This script changes the user of the file hello to betty only if the current owner is guillaume
