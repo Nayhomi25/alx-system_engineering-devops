@@ -43,3 +43,6 @@ This script changes the group of hello to school
 
 #filename: 100-change_owner_and_group
 This script changes the owner and group of all the files in the current working directory
+
+#filename: 101-symbolic_link_permissions
+This script changes the owner and group of a symbolic file link
