@@ -37,3 +37,6 @@ This script gives execute permissions for all sub directories
 
 #filename: 12-directory_permissions
 this script creates a directory with 751 permissions
+
+#filename: 13-change_group
+This script changes the group of hello to school
