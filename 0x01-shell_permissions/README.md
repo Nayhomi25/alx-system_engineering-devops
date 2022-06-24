@@ -40,3 +40,6 @@ this script creates a directory with 751 permissions
 
 #filename: 13-change_group
 This script changes the group of hello to school
+
+#filename: 100-change_owner_and_group
+This script changes the owner and group of all the files in the current working directory
