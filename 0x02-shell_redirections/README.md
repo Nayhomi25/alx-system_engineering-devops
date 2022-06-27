@@ -10,4 +10,6 @@ SHELL REDIRECTIONS SCRIPT
 
 4-lastlines: Displays the last 10 lines of the file /etc/passwd
 
-5-firstlines: Displays the first 10 lines of thr file /etc/passwd
+5-firstlines: Displays the first 10 lines of the file /etc/passwd
+
+6-third_line: Displays the third line of the file iacta
