@@ -29,3 +29,5 @@ SHELL REDIRECTIONS SCRIPT
 13-unique: Sorts and displays a list of words 
 
 14-findthatword: Display all files that have thwe word root in them
+
+15-countthatword: Display number of lines that contain the pattern bin in the file /etc/passwd
