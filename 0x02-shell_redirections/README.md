@@ -13,3 +13,5 @@ SHELL REDIRECTIONS SCRIPT
 5-firstlines: Displays the first 10 lines of the file /etc/passwd
 
 6-third_line: Displays the third line of the file iacta
+
+7-file: Creates a new file
