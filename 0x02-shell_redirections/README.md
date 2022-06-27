@@ -43,3 +43,5 @@ SHELL REDIRECTIONS SCRIPT
 20-hiago: Deletes all Cc from input
 
 21-reverse: Reverses its input
+
+22-users_and_homes: Displays all users and their home directories sorted by users
