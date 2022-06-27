@@ -37,3 +37,5 @@ SHELL REDIRECTIONS SCRIPT
 17-hidethisword: Displays all the lines that do not have the pattern bin in them
 
 18-letteronly: Display lines starting with letters only
+
+19-AZ: Replaces all characters 'A' and 'c' to 'Z' and 'e'
