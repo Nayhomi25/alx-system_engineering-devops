@@ -45,3 +45,5 @@ SHELL REDIRECTIONS SCRIPT
 21-reverse: Reverses its input
 
 22-users_and_homes: Displays all users and their home directories sorted by users
+
+100-empty_casks: finds all empty files and directories in the current working directory and sub directories
