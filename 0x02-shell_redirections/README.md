@@ -21,3 +21,5 @@ SHELL REDIRECTIONS SCRIPT
 9-duplicate_last_line: Duplicates the last line of the file iacta
 
 10-no_more_js: Deletes all js files
+
+11-directories: counts the number of directory and sub-directories
