@@ -35,3 +35,5 @@ SHELL REDIRECTIONS SCRIPT
 16-whatsnext: Display lines containing the pattern root and the 3 lines after them
 
 17-hidethisword: Displays all the lines that do not have the pattern bin in them
+
+18-letteronly: Display lines starting with letters only
