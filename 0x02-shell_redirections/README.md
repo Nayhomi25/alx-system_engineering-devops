@@ -1,7 +1,9 @@
 SHELL REDIRECTIONS SCRIPT
 
-1-hello_world: prints hello world to standard output
+0-hello_world: prints hello world to standard output
 
-2-confused_smiley:Displays a confused smiley
+1-confused_smiley:Displays a confused smiley
 
-3-hellofile: Display the contents of /etc/passwd file
+2-hellofile: Display the contents of /etc/passwd file
+
+3-twofiles: Display the contents of /etc/passwd and /etc/hosts
