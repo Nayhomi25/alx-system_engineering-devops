@@ -7,3 +7,5 @@ SHELL REDIRECTIONS SCRIPT
 2-hellofile: Display the contents of /etc/passwd file
 
 3-twofiles: Display the contents of /etc/passwd and /etc/hosts
+
+4-lastlines: Displays the last 10 lines of the file /etc/passwd
