@@ -15,3 +15,5 @@ SHELL REDIRECTIONS SCRIPT
 6-third_line: Displays the third line of the file iacta
 
 7-file: Creates a new file
+
+8-cwd_state: Writes the result of the command ls -la into a file
