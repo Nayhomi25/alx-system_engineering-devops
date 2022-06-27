@@ -4,3 +4,4 @@ SHELL REDIRECTIONS SCRIPT
 
 2-confused_smiley:Displays a confused smiley
 
+3-hellofile: Display the contents of /etc/passwd file
