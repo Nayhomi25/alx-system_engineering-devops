@@ -19,3 +19,5 @@ SHELL REDIRECTIONS SCRIPT
 8-cwd_state: Writes the result of the command ls -la into a file
 
 9-duplicate_last_line: Duplicates the last line of the file iacta
+
+10-no_more_js: Deletes all js files
