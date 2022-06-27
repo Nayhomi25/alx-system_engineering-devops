@@ -31,3 +31,5 @@ SHELL REDIRECTIONS SCRIPT
 14-findthatword: Display all files that have thwe word root in them
 
 15-countthatword: Display number of lines that contain the pattern bin in the file /etc/passwd
+
+16-whatsnext: Display lines containing the pattern root and the 3 lines after them
