@@ -25,3 +25,5 @@ SHELL REDIRECTIONS SCRIPT
 11-directories: counts the number of directory and sub-directories
 
 12-newest_files: Displays the  10 newest files in the current directory
+
+13-unique: Sorts and displays a list of words 
