@@ -17,3 +17,5 @@ SHELL REDIRECTIONS SCRIPT
 7-file: Creates a new file
 
 8-cwd_state: Writes the result of the command ls -la into a file
+
+9-duplicate_last_line: Duplicates the last line of the file iacta
