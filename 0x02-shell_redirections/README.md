@@ -23,3 +23,5 @@ SHELL REDIRECTIONS SCRIPT
 10-no_more_js: Deletes all js files
 
 11-directories: counts the number of directory and sub-directories
+
+12-newest_files: Displays the  10 newest files in the current directory
