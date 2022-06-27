@@ -27,3 +27,5 @@ SHELL REDIRECTIONS SCRIPT
 12-newest_files: Displays the  10 newest files in the current directory
 
 13-unique: Sorts and displays a list of words 
+
+14-findthatword: Display all files that have thwe word root in them
