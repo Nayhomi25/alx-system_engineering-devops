@@ -39,3 +39,5 @@ SHELL REDIRECTIONS SCRIPT
 18-letteronly: Display lines starting with letters only
 
 19-AZ: Replaces all characters 'A' and 'c' to 'Z' and 'e'
+
+20-hiago: Deletes all Cc from input
