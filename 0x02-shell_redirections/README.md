@@ -33,3 +33,5 @@ SHELL REDIRECTIONS SCRIPT
 15-countthatword: Display number of lines that contain the pattern bin in the file /etc/passwd
 
 16-whatsnext: Display lines containing the pattern root and the 3 lines after them
+
+17-hidethisword: Displays all the lines that do not have the pattern bin in them
