@@ -12,4 +12,6 @@ SHELL VARIABLES AND EXPANSIONS
 
 5-local_variables: A script that prints all the local and environmental variables and their functions
 
-6-create_global_variable: A script that creates a new local variable
+6-create_local_variable: A script that creates a new local variable
+
+7-create_global_variable: A script that creates a new global variable
