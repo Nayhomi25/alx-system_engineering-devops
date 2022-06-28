@@ -9,3 +9,5 @@ SHELL VARIABLES AND EXPANSIONS
 3-paths: A script that counts the number of directories in a path
 
 4-global_variables: A script that prints the environmental variables
+
+5-local_variables: A script that prints all the local and environmental variables and their functions
