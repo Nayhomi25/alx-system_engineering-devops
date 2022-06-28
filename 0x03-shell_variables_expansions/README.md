@@ -21,3 +21,5 @@ SHELL VARIABLES AND EXPANSIONS
 9-divide_and-rule: A script that prints the result of POWER divided by DIVIDE
 
 10_love_exponent_breath: A script that prints the result of BREATH to the power LOVE
+
+11-binary_to_decimal: A cript that converts the contents of BINARY from binary to decimal
