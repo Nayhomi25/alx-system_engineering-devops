@@ -7,3 +7,5 @@ SHELL VARIABLES AND EXPANSIONS
 2-path: A script that add to the path of a directory
 
 3-paths: A script that counts the number of directories in a path
+
+4-global_variables: A script that prints the environmental variables
