@@ -15,3 +15,5 @@ SHELL VARIABLES AND EXPANSIONS
 6-create_local_variable: A script that creates a new local variable
 
 7-create_global_variable: A script that creates a new global variable
+
+8-true_knowledge: A script that prints the addition of 128 to the value of the variable TRUEKNOWLEDGE
