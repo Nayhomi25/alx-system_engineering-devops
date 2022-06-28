@@ -17,3 +17,5 @@ SHELL VARIABLES AND EXPANSIONS
 7-create_global_variable: A script that creates a new global variable
 
 8-true_knowledge: A script that prints the addition of 128 to the value of the variable TRUEKNOWLEDGE
+
+9-divide_and-rule: A script that prints the result of POWER divided by DIVIDE
