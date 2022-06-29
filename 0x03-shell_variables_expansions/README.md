@@ -25,3 +25,5 @@ SHELL VARIABLES AND EXPANSIONS
 11-binary_to_decimal: A cript that converts the contents of BINARY from binary to decimal
 
 12-combinations: A script that prints every possible combo of a-z except oo
+
+13-print_float: A script that prints a number with 2 decimal places
