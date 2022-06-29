@@ -23,3 +23,5 @@ SHELL VARIABLES AND EXPANSIONS
 10_love_exponent_breath: A script that prints the result of BREATH to the power LOVE
 
 11-binary_to_decimal: A cript that converts the contents of BINARY from binary to decimal
+
+12-combinations: A script that prints every possible combo of a-z except oo
