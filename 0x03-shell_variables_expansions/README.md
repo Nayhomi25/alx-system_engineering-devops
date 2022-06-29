@@ -27,3 +27,5 @@ SHELL VARIABLES AND EXPANSIONS
 12-combinations: A script that prints every possible combo of a-z except oo
 
 13-print_float: A script that prints a number with 2 decimal places
+
+100-decimal_to_hexadecimal: A script that converts a number from base 10 to base 16
