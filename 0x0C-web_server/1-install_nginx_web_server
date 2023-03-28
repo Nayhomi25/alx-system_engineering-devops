@@ -7,14 +7,14 @@
 apt-get update
 apt-get install -y nginx
 
-mkdir -p /var/www/html
+mkdir /var/www/html
 touch /var/www/html/index.html
 echo "Hello World!" > /var/www/html/index.html
 printf %s "server {
      listen      80 default_server;
      listen      [::]:80 default_server;
      root        /var/www/html;
-     index       index.html index.htm index.nginx-debian.html;
+     index       index.html index.htm;
 }
 " > /etc/nginx/sites-available/default
 
