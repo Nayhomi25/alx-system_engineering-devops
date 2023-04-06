@@ -1,6 +1,5 @@
-#!/usr/bin/env bash
-# error 301 redirects server to a different site
-
+#!/use/bin/env bash
+# redirects to new page error 301
 apt-get -y update
 apt-get install nginx -y
 
