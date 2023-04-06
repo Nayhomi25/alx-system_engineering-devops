@@ -17,3 +17,5 @@ printf %s "server {                                      listen 80 default_serve
 	   return 301 https://intranet.alxswe.com/projects/266;
    }
 }" > /etc/nginx/sites-available/default
+
+service nginx reload
