@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# redirects to new page error 301
+#Configure your Nginx server so that /redirect_me is redirecting to another page.
 apt-get -y update
 apt-get install nginx -y
 
