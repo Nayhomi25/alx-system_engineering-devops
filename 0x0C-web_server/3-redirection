@@ -1,21 +1,11 @@
-#!/usr/bin/env bash
-# Configures an Nginx server so that /redirect_me redirects to another page.
-# The redirection is configured as a "301 Moved Permanently"
+#!/usr/bin/env bash                                   # Installs Nginx with the following configurations:   #+    Listens on port 80.                             #+    Returns a page containing "Holberton School" when queried                                             #++    at the root with a curl GET request.
+                                                      sudo apt-get -y update
+sudo apt-get install nginx -y
 
-apt-get update
-apt-get install -y nginx
-
-mkdir /var/www/html
-touch /var/www/html/index.html
-echo "Hello World!" > /var/www/html/index.html
-printf %s "server {
-    listen 80;
-    listen [::]:80 default_server;
-    root   /var/www/html;
-    index  index.html index.htm index.nginx-debian.html;
-    location /redirect_me {
-        return 301 http://cuberule.com/;
-    }
+sudo ufw allow 'Nginx HTTP'                                                                                 sudo mkdir -p /var/www/html                           sudo touch /var/www/html/index.html                                                                         sudo chown -R $USER:$USER /var/www/html/index.html    sudo chown -R $USER:$USER /etc/nginx/sites-available/default
+                                                      sudo echo "Hello World!" > /var/www/html/index.html
+sudo printf %s "server {                                      listen 80 default_server;                             listen [::]:80 default_server;                                                                              root /var/www/html;                                   index index.html index.htm index.nginx-debian.html;
+	location /redirect_me {
+	   return 301 https://intranet.alxswe.com/projects/266;
+   }
 }" > /etc/nginx/sites-available/default
-
-service nginx restart
