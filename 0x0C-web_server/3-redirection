@@ -17,4 +17,5 @@ printf %s "server {                                      listen 80 default_serve
    }
 }" | sudo tee /etc/nginx/sites-available/default
 
-sudo service nginx reload
+service nginx start
+service nginx reload
