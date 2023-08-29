@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-sudo service apache2 start
+# Fix the apache server
+echo "ServerName 127.0.0.2" >> /etc/apache2/apache2.conf
+apachectl start
