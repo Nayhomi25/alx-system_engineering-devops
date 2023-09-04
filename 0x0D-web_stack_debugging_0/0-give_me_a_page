@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Fix the apache server
-sudo service apache2 start
-sudo echo "Hello Holberton" | /var/www/html/index.html
+# Debugging apache
+echo "ServerName 127.0.0.1" >> /etc/apache2/apache2.conf
+apachectl start
