@@ -26,8 +26,8 @@ defaults
     retries 3
     option redispatch
     timeout connect  5000
-    timeout client  10000
-    timeout server  10000
+    timeout client  50000
+    timeout server  50000
 listen hbnb
     bind 0.0.0.0:80
     mode http
@@ -35,7 +35,8 @@ listen hbnb
     stats uri /haproxy?stats
     balance roundrobin
     option httpclose
-    option forwardfor:wq
+    option forwardfor
+    http-response set-header Connection keep-alive
     server web-01 18.233.62.178:80 check
     server web-02 174.129.55.177:80 check
 " >> /etc/haproxy/haproxy.cfg
