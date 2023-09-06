@@ -35,9 +35,12 @@ listen hbnb
     stats uri /haproxy?stats
     balance roundrobin
     option httpclose
-    option forwardfor
-    server 79680-web-01 18.233.62.178:80 check
-    server 79680-web-02 174.129.55.177:80 check
+    option forwardfor:wq
+    server web-01 18.233.62.178:80 check
+    server web-02 174.129.55.177:80 check
 " >> /etc/haproxy/haproxy.cfg
 
 sudo service haproxy start
+sudo systemctl enable haproxy.service
+
+sudo systemctl restart haproxy.service
