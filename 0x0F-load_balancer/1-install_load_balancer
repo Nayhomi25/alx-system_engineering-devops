@@ -37,8 +37,8 @@ listen hbnb
     option httpclose
     option forwardfor
     http-response set-header Connection keep-alive
-    server web-01 18.233.62.178:80 check
-    server web-02 174.129.55.177:80 check
+    server 79680-web-01 18.233.62.178:80 check
+    server 79680-web-02 174.129.55.177:80 check
 " >> /etc/haproxy/haproxy.cfg
 
 sudo service haproxy start
