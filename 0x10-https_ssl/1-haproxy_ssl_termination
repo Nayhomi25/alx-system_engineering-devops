@@ -1,0 +1,13 @@
+frontend www-http
+         bind *:80
+         http-request add-header X-Forwarded-Proto http
+         default_backend web-backend
+frontend www-https
+         bind *:443 ssl crt /etc/ssl/certs/ssl.pem
+         http-request add-header X-Forwarded-Proto https
+         default_backend web-backend
+backend web-backend
+        balance roundrobin
+        redirect scheme https if !{ ssl_fc }
+        server 79680-web-01 18.233.62.178:80 check
+        server 79680-web-02 174.129.55.177:80 check
