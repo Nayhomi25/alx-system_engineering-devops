@@ -8,7 +8,7 @@ if __name__ == "__main__":
     base_url = 'https://jsonplaceholder.typicode.com/'
     try:
         employee_id = sys.argv[1]
-    except:
+    except Exception as e:
         print('Usage: {} employee_id'.format(sys.argv[0]))
         exit(1)
 
@@ -24,11 +24,11 @@ if __name__ == "__main__":
     objs = json.loads(response.text)
     builder = ""
     for obj in objs:
-            builder += '"{}","{}","{}","{}"\n'.format(
+        builder += '"{}","{}","{}","{}"\n'.format(
                 employee_id,
                 user_name,
                 obj.get('completed'),
                 obj.get('title')
-            )
+                )
     with open('{}.csv'.format(employee_id), 'w') as myFile:
         myFile.write(builder)

@@ -1,31 +1,37 @@
 #!/usr/bin/python3
-"""Accessing a REST API for todo lists of employees"""
+"""script for parsing web data from an api
+"""
+if __name__ == "__main__":
+    import json
+    import requests
+    import sys
+    base_url = 'https://jsonplaceholder.typicode.com/'
 
-import json
-import requests
-import sys
-
-
-if __name__ == '__main__':
-    url = "https://jsonplaceholder.typicode.com/users"
-
+    # grab info about all users
+    url = base_url + 'users'
     response = requests.get(url)
-    users = response.json()
+    users = json.loads(response.text)
 
-    dictionary = {}
+    # grab the info about the users' tasks
+    builder = {}
     for user in users:
-        user_id = user.get('id')
+        employee_id = user.get('id')
+        user_id_key = str(employee_id)
         username = user.get('username')
-        url = 'https://jsonplaceholder.typicode.com/users/{}'.format(user_id)
-        url = url + '/todos/'
+        builder[user_id_key] = []
+        url = base_url + 'todos?userId={}'.format(employee_id)
+
         response = requests.get(url)
-        tasks = response.json()
-        dictionary[user_id] = []
-        for task in tasks:
-            dictionary[user_id].append({
-                "task": task.get('title'),
-                "completed": task.get('completed'),
-                "username": username
-            })
-    with open('todo_all_employees.json', 'w') as file:
-        json.dump(dictionary, file)
+        objs = json.loads(response.text)
+        for obj in objs:
+            json_data = {
+                    "task": obj.get('title'),
+                    "completed": obj.get('completed'),
+                    "username": username
+                    }
+            builder[user_id_key].append(json_data)
+
+    # write the data to the file
+    json_encoded_data = json.dumps(builder)
+    with open('todo_all_employees.json', 'w') as myFile:
+        myFile.write(json_encoded_data)
