@@ -1,35 +1,24 @@
 #!/usr/bin/python3
-"""script for parsing web data from an api
+""" Defines a function that queries the Reddit API and prints the titles of the
+    first 10 hot posts listed for a given subreddit
 """
-import json
 import requests
-import sys
 
 
 def top_ten(subreddit):
-    """api call to reddit to get the number of subscribers
+    """Queries the Reddit API and prints the titles of the first 10 hot posts
+       listed for a given subreddit
     """
-    base_url = 'https://www.reddit.com/r/'
+    url = "https://www.reddit.com/r/{}/hot.json?limit=10".format(subreddit)
     headers = {
         'User-Agent':
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 \
         (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.59'
     }
-    # grab info about all users
-    url = base_url + '{}/top/.json?count=10'.format(subreddit)
     response = requests.get(url, headers=headers)
-    resp = json.loads(response.text)
-
-    try:
-        # grab the info about the users' tasks
-        data = resp.get('data')
-        children = data.get('children')
-    except Exception as ex:
+    if response.status_code == 200:
+        data = response.json()
+        for post in data['data']['children']:
+            print(post['data']['title'])
+    else:
         print('None')
-    if children is None or data is None or len(children) < 1:
-        print('None')
-
-    for i, post_dict in enumerate(children):
-        if i == 10:
-            break
-        print(post_dict.get('data').get('title'))
